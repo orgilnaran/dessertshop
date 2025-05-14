@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 30px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+/* Алхам 3: 600px-аас бага үед gap-ийг 10px болгох */
+@media (max-width: 600px) {
+  .container {
+    gap: 10px;
+  }
+}
+
+/* Алхам 4: 400px-аас бага үед grid-ийг 1 багана болгох */
+@media (max-width: 400px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+<body>
+    <div class="container">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+</body>
+</html>

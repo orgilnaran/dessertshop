@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <title>hello bagshaa</title>
+  <style>
+    .container{
+      display: flex;
+      gap: 20px;
+    }
+
+    .redBox, .blueBox{
+      width: 300px;
+      height: 300px;
+    }
+
+    .redBox {
+      background-color: red;
+    }
+
+    .blueBox {
+      background-color: blue;
+    }
+
+    
+    @media (max-width: 500px) {
+      .redBox {
+        background-color: blue;
+      }
+
+      .blueBox {
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="redBox"></div>
+    <div class="blueBox"></div>
+  </div>
+</body>
+</html>
