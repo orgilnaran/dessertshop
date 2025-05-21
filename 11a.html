@@ -3,32 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navigation Grid</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: #379999;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            background-color: #2a7f7f;
+        }
+    </style>
 </head>
-<style>
-    body{
-        display: flex;
-        align-items: center;
-    }
-    div{
-        height: 100px;
-        width: 100px;
-        background-color: rgb(55, 153, 153);
-        border-color: rgb(0, 0, 0);
-        margin: 5px;
-        text-align: center;
-
-    }
-</style>
 <body>
-   <a href="excersise1.html"> <div>1</div> </a> 
-   <a href="sigmaboy2.html"> <div>2</div> </a> 
-   <a href="sigmaboy3.html"> <div>3</div> </a> 
-   <a href="sigmaboy4.html"> <div>4</div> </a> 
-   <a href="sigmaboy5.html"> <div>5</div> </a> 
-   <a href="sigmaboy6.html"> <div>6</div> </a> 
-   <a href="sigmaboy7.html"> <div>7</div> </a> 
-
-   
+    <div class="container">
+        <a href="excersise1.html"><div class="box">1</div></a>
+        <a href="sigmaboy2.html"><div class="box">2</div></a>
+        <a href="sigmaboy3.html"><div class="box">3</div></a>
+        <a href="sigmaboy4.html"><div class="box">4</div></a>
+        <a href="sigmaboy5.html"><div class="box">5</div></a>
+        <a href="sigmaboy6.html"><div class="box">6</div></a>
+        <a href="sigmaboy7.html"><div class="box">7</div></a>
+    </div>
 </body>
 </html>
